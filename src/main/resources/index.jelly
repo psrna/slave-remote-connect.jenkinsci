@@ -1,0 +1,6 @@
+<!--
+  This view is used to render the installed plugins page.
+-->
+<div>
+  slave-remote-connect-plugin: Connect remotely via VNC/RDP to the jenkins slave.
+</div>

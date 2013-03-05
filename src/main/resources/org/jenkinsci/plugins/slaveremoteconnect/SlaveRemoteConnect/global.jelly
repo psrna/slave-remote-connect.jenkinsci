@@ -1,0 +1,8 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <f:section title="VNC/RDP Connect Remote Slave">
+    <f:entry title="Guacamole APP server address" field="serverAddress"
+      description="e.g. http://myserver:8080/slave-remote-connect">
+      <f:textbox />
+    </f:entry>
+  </f:section>
+</j:jelly>
