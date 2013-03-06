@@ -56,7 +56,7 @@ public class SlaveRemoteConnect extends BuildWrapper  {
 	public Environment setUp(AbstractBuild build, Launcher launcher,
 			BuildListener listener) throws IOException, InterruptedException {
 
-		String hostname = Util.getHostName();
+		String hostname = build.getEnvironment(listener).get("HOSTNAME");
 		String username = build.getEnvironment(listener).get("USERNAME");
 		String password = build.getEnvironment(listener).get("PASSWORD");
 		String vnc_line = getVNCLine(build.getLog(100));
